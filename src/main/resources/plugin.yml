@@ -1,0 +1,12 @@
+author: Externalizable
+main: chat.tidy.bukkit.TidyChatBukkit
+name: tidychat
+version: ${project.version}
+website: https://tidy.chat
+permissions:
+  tidychat.bypass:
+    description: Bypass the chat filter
+    default: false
+  tidychat.notification:
+    description: Receive notifications
+    default: false

@@ -1,0 +1,19 @@
+# You can upload your own config at https://tidy.chat/config to receive a private bearer token
+# Leave blank if you want to use the default config as provided by tidychat
+tidychatBearer: ""
+
+# Whether the chat should be disabled if the remote tidychat server goes offline
+# If you set this option to 'false', no messages will be sent when tidychat loses connection
+sendMessageIfDisconnected: false
+
+messages:
+  # Message sent to all users with the 'tidychat.notification' permission when the connection to
+  # the remote tidychat server changes
+  tidychatStateConnecting: "&eConnecting to tidychat..."
+  tidychatStateOpen: "&aConnected to tidychat!"
+  tidychatStateClosed: "&cDisconnected from tidychat. Trying to reconnect..."
+  # Message sent to users attempting to send chat messages while the remote tidychat server is offline and
+  # the 'sendMessageIfDisconnected' option is set to 'false'
+  serverDisconnected: "&cChatting is temporarily disabled! &7Please try again in a few seconds."
+  # Message sent to users when their chat message was found to be violating the chat filter
+  messageBlocked: "&cYour message was blocked!"
